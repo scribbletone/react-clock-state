@@ -1,6 +1,6 @@
 {
   "name": "react-clock-state",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Simple mixin for keeping track of current time",
   "main": "src/ClockState.js",
   "scripts": {
