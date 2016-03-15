@@ -25,8 +25,10 @@ var MyComponent = React.createClass({
     return (
       <ul>
         <li>Current Hour: {this.getCurrentHour()}</li>
-        <li>currentMinute={this.getCurrentMinute()}</li>
-        <li>currentSecond={this.getCurrentSecond()}</li>
+        <li>Current Minute: {this.getCurrentMinute()}</li>
+        <li>Current Second: {this.getCurrentSecond()}</li>
+        <li>Formatted Time: {this.formattedTime()}
+        <li>Raw Current Date and Time: {this.state.currentDate()}
       </ul>
     );
   }
@@ -45,3 +47,8 @@ module.exports = MyComponent;
 ### Suggestions 
 It's suggested to only include the mixin once, and a very top level component. Then just pass down the functions or values to children. Or store the values in a global state system like Flux. Otherwise you run the risk of times being slightly out of of sync, sync the time is only set once every second.
 
+
+### Future ideas
+- Better formatting options
+- A way to set the default hour mode
+- Helpers for getting the calender date
