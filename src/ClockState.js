@@ -10,7 +10,8 @@ var ClockState = {
   componentDidMount: function() {
     setInterval(this.setCurrentTime, 1000);
   },
-  getCurrentHour: function(hourMode = this.state.defaultHourMode){
+  getCurrentHour: function(hourMode){
+    hourMode = hourMode || this.state.defaultHourMode;
     var hour = this.state.currentDate.getHours() % hourMode;
     
     if (hour == 0) {
@@ -29,7 +30,8 @@ var ClockState = {
       currentDate: new Date()
     });
   },
-  formattedTime: function(opts={hourMode: this.state.defaultHourMode}){
+  formattedTime: function(opts){
+    opts = opts || {hourMode: this.state.defaultHourMode};
     return this.getCurrentHour(opts.hourMode) + ':' + this.getCurrentMinute() + ':' +  this.getCurrentSecond();
   }
 };
