@@ -1,0 +1,25 @@
+{
+  "name": "react-clock-state",
+  "version": "1.0.0",
+  "description": "Simple mixin for keeping track of current time",
+  "main": "src/ClockState.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scribbletone/react-clock-state.git"
+  },
+  "keywords": [
+    "react",
+    "mixin",
+    "clock",
+    "time"
+  ],
+  "author": "Scribble Tone",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/scribbletone/react-clock-state/issues"
+  },
+  "homepage": "https://github.com/scribbletone/react-clock-state#readme"
+}
